@@ -1,9 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+      />
+    </head>
+
+    <link rel="stylesheet" href="pages/index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="calculator calculator__dark">
+          <div class="calculator__toggler active">
+            <span class="calculator__toggler-icon material-symbols-outlined">
+              dark_mode
+            </span>
+          </div>
+        </div>
+        <div class="calculator__display">
+          <div id="display" class="display"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td>
+                <button class="calculator__btn" id="borrar">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+              <td><button class="calculator__btn" id="dividir">/</button></td>
+              <td>
+                <button class="calculator__btn" id="multiplicar">
+                  <span class="material-symbols-outlined"> close </span>
+                </button>
+              </td>
+              <td>
+                <button class="calculator__btn" id="backspace" disabled>
+                  <span class="material-symbols-outlined"> backspace </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="calculator__btn" id="7">7</button></td>
+              <td><button class="calculator__btn" id="8">8</button></td>
+              <td>
+                <button class="calculator__btn" id="9">9</button>
+              </td>
+              <td>
+                <button class="calculator__btn" id="resta">
+                  <span class="material-symbols-outlined"> remove </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="calculator__btn" id="4">4</button></td>
+              <td><button class="calculator__btn" id="5">5</button></td>
+              <td><button class="calculator__btn" id="6">6</button></td>
+              <td>
+                <button class="calculator__btn" id="suma">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="calculator__btn" id="1">1</button></td>
+              <td><button class="calculator__btn" id="2">2</button></td>
+              <td><button class="calculator__btn" id="3">3</button></td>
+              <td rowspan="2">
+                <button class="calculator__btn" id="igual">
+                  <span class="material-symbols-outlined"> equal </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="calculator__btn" id="dot">.</button></td>
+              <td><button class="calculator__btn" id="0">0</button></td>
+              <td><button class="calculator__btn" id="00">00</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="app/index.js"></script>
+  </body>
 </html>
