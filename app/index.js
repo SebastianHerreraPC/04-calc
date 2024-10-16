@@ -20,7 +20,10 @@ button.forEach((item) => {
       if (cuenta.length > 0) {
         display.textContent = cuenta.slice(0, cuenta.length - 1);
       }
+    } else if (display.textContent != "" && itemm.id == "igual") {
+      display.innerText = eval(display.innerText);
     }
+
     backspaceButtonState();
   });
 });
